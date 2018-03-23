@@ -14,7 +14,7 @@ git clone https://github.com/ameerthehacker/buddy-slack-bot.git
 
 3.  Run **npm install** in the root directory to install dependencies
 
-4.  Create .env file in the root directory with following
+4.  Create .env file in the root directory with the following configs
 
 ```
 clientId=YOUR_SLACK_APP_ID
@@ -26,7 +26,7 @@ PORT=3000
 
     To do development in local you have to expose the port 3000 to the internet for that download and install [ngrok](https://ngrok.com/)
 
-    After setting up **ngrok** will give you a public url something like **http://4184a728.ngrok.io/**
+    After setting it up **ngrok** will give you a public url something like **http://4184a728.ngrok.io/**
 
 6.  Change some settings in your slack app
 
@@ -36,9 +36,13 @@ PORT=3000
 
     Go to **Event Subscriptions** section in your app and change the **request url**
 
-    ![Event](./images/event.PNG)
+    ![Event](./images/event.png)
 
 7.  Execute **npm start** in the root directory to start the bot
+
+# Reference Links
+
+* [Botkit](https://github.com/howdyai/botkit)
 
 ## License
 
