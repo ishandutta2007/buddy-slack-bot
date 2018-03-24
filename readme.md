@@ -2,7 +2,7 @@
 
 An awesome bot which will keep my team at zauba motivated
 
-# Getting Started
+## Getting Started
 
 1.  Install node.js from [Nodejs.org](https://nodejs.org/en/)
 
@@ -40,7 +40,7 @@ PORT=3000
 
 7.  Execute **npm start** in the root directory to start the bot
 
-# Reference Links
+## Reference Links
 
 * [Botkit](https://github.com/howdyai/botkit)
 
