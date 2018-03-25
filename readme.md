@@ -8,7 +8,7 @@ An awesome bot which will keep my team at zauba motivated
 
 2.  Clone the repo
 
-```bash
+```sh
 git clone https://github.com/ameerthehacker/buddy-slack-bot.git
 ```
 
@@ -16,7 +16,7 @@ git clone https://github.com/ameerthehacker/buddy-slack-bot.git
 
 4.  Create .env file in the root directory with the following configs
 
-```bash
+```sh
 clientId=YOUR_SLACK_APP_ID
 clientSecret=YOUR_SLACK_APP_SECRET
 PORT=3000
@@ -27,7 +27,7 @@ MYSQL_DB=YOUR_MYSQL_DB
 
 5.  Create your database in **mysql** and migrate the required tables using the command
 
-```bash
+```sh
 npm run db:migrate
 ```
 
