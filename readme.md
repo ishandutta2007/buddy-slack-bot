@@ -8,7 +8,7 @@ An awesome bot which will keep my team at zauba motivated
 
 2.  Clone the repo
 
-```
+```sh
 git clone https://github.com/ameerthehacker/buddy-slack-bot.git
 ```
 
@@ -16,19 +16,28 @@ git clone https://github.com/ameerthehacker/buddy-slack-bot.git
 
 4.  Create .env file in the root directory with the following configs
 
-```
+```sh
 clientId=YOUR_SLACK_APP_ID
 clientSecret=YOUR_SLACK_APP_SECRET
 PORT=3000
+MYSQL_USER=YOUR_MYSQL_USERNAME
+MYSQL_PWD=YOUR_MYSQL_PASSWORD
+MYSQL_DB=YOUR_MYSQL_DB
 ```
 
-5.  Expose yourself to the internet
+5.  Create your database in **mysql** and migrate the required tables using the command
+
+```sh
+npm run db:migrate
+```
+
+6.  Expose yourself to the internet
 
     To do development in local you have to expose the port 3000 to the internet for that download and install [ngrok](https://ngrok.com/)
 
     After setting it up **ngrok** will give you a public url something like **http://4184a728.ngrok.io/**
 
-6.  Change some settings in your slack app
+7.  Change some settings in your slack app
 
     Go to the **OAuth & Permissions** section in your app and add the **redirect url**
 
@@ -38,11 +47,12 @@ PORT=3000
 
     ![Event](./images/event.png)
 
-7.  Execute **npm start** in the root directory to start the bot
+8.  Execute **npm start** in the root directory to start the bot
 
 ## Reference Links
 
 * [Botkit](https://github.com/howdyai/botkit)
+* [ORM](https://www.npmjs.com/package/orm)
 
 ## License
 

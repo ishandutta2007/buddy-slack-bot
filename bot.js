@@ -51,12 +51,8 @@ This bot demonstrates many of the core features of Botkit:
     -> http://howdy.ai/botkit
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-const NODE_ENV = process.env.NODE_ENV || "dev";
-
-if (NODE_ENV == "dev") {
-  var env = require("node-env-file");
-  env(__dirname + "/.env");
-}
+// Load configs
+require("./load-env");
 
 if (!process.env.clientId || !process.env.clientSecret || !process.env.PORT) {
   usage_tip();
