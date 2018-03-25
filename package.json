@@ -16,6 +16,8 @@
     "express": "^4.14.0",
     "express-hbs": "^1.0.4",
     "node-env-file": "^0.1.8",
+    "node-mysql": "^0.4.2",
+    "orm": "^4.0.2",
     "querystring": "^0.2.0",
     "request": "^2.79.0",
     "wordfilter": "^0.2.6"
