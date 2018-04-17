@@ -6,7 +6,8 @@
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
-    "db:migrate": "node db/migrations.js"
+    "db:migrate": "node db/migrations.js",
+    "dev": "nodemon bot.js"
   },
   "dependencies": {
     "app-root-path": "^2.0.1",
@@ -25,7 +26,9 @@
     "request": "^2.79.0",
     "wordfilter": "^0.2.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/howdyai/botkit-starter-slack.git"
